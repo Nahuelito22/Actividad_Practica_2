@@ -1,11 +1,14 @@
 import React from 'react';
+import Dashboard from './components/Dashboard';
+import { CssBaseline } from '@mui/material';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Actividad Práctica 2</h1>
-      <p>Bienvenido al Dashboard básico.</p>
-    </div>
+    <>
+      <CssBaseline />
+      {/* Tu compañero colocará la Navbar aquí */}
+      <Dashboard />
+    </>
   );
 }
 
