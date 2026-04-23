@@ -1,16 +1,28 @@
-import {AppBar, Toolbar, Typography} from "@mui/material";
+import { AppBar, Toolbar, Typography, Button, Box } from "@mui/material";
 
-function Navbar() { 
-    return (
-        <AppBar position="static">
-            <Toolbar>
-                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                    My DashBoard
-                </Typography>
-                <Typography>Usuario</Typography>
-            </Toolbar>
-            </AppBar>
-    );
+function Navbar() {
+  return (
+    <AppBar position="static">
+      <Toolbar>
+
+      
+
+        {/* Botones de navegación */}
+        <Button color="inherit">Inicio</Button>
+        <Button color="inherit">Tareas</Button>
+        <Button color="inherit">Usuarios</Button>
+
+        {/* Espacio flexible */}
+        <Box sx={{ flexGrow: 1 }} />
+
+        {/* Usuario */}
+        <Typography variant="body1">
+          Usuario
+        </Typography>
+
+      </Toolbar>
+    </AppBar>
+  );
 }
 
 export default Navbar;
